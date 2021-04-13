@@ -1,101 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Template</title>
-    <style>
-        div.resp  
-        { 
-            font-family: 'Montserrat', sans-serif;
-            float: left;
-            width:100%;
-            text-align: center;
-            box-sizing: border-box;
-            padding-left:20px; padding-right:20px; padding-top:0px;
-        }
-        div.respDouble 
-        { 
-            width: 50%; 
-            -webkit-flex:1; -ms-flex:1; flex:1;   
-        }
-        div.respTriple
-        { 
-            width: 33.33%; 
-            -webkit-flex:1; -ms-flex:1; flex:1;   
-        }
-        div.respQuadruple
-        { 
-            width: 25%; 
-            -webkit-flex:1; -ms-flex:1; flex:1;   
-        }
-        div.respPad
-        { 
-            padding-left:5%;padding-right:5%;  
-        }
-
-        div.respContainerDouble,
-        div.respContainerTriple,
-        div.respContainerQuadruple
-        { 
-            padding: unset;
-            display:-webkit-flex; display:flex;
-        } 
-
-        @media ( max-width: 1366px )
-        {
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Template</title>
+        <style>
+            div.resp  
+            { 
+                font-family: 'Montserrat', sans-serif;
+                float: left;
+                width:100%;
+                text-align: center;
+                box-sizing: border-box;
+                padding-left:20px; padding-right:20px; padding-top:0px;
+            }
             div.respDouble 
             { 
                 width: 50%; 
                 -webkit-flex:1; -ms-flex:1; flex:1;   
             }
-            div.respQuadruple 
+            div.respTriple
             { 
-                width: 50%;
-            }
-            div.respContainerQuadruple 
-            { 
-                padding: unset;
-                display: unset;
-            }
-        }
-
-        @media ( max-width: 1250px )
-        {
-            div.respDouble 
-            { 
-                width: 50%; 
+                width: 33.33%; 
                 -webkit-flex:1; -ms-flex:1; flex:1;   
             }
-            div.respQuadruple 
+            div.respQuadruple
             { 
-                width: 50%;
-            }
-            div.respContainerQuadruple 
-            { 
-                padding: unset;
-                display: unset;
-            }
-        }
-
-        @media ( max-width: 768px )
-        {
-            div.respDouble 
-            { 
-                width: 100%;
-            }
-            div.respTriple 
-            { 
-                width: 100%;
-            }
-            div.respQuadruple 
-            { 
-                width: 100%;
+                width: 25%; 
+                -webkit-flex:1; -ms-flex:1; flex:1;   
             }
             div.respPad
             { 
-                padding-left:0%; padding-right:0%;  
+                padding-left:5%;padding-right:5%;  
             }
 
             div.respContainerDouble,
@@ -103,107 +40,170 @@
             div.respContainerQuadruple
             { 
                 padding: unset;
-                display: unset;
+                display:-webkit-flex; display:flex;
+            } 
+
+            @media ( max-width: 1366px )
+            {
+                div.respDouble 
+                { 
+                    width: 50%; 
+                    -webkit-flex:1; -ms-flex:1; flex:1;   
+                }
+                div.respQuadruple 
+                { 
+                    width: 50%;
+                }
+                div.respContainerQuadruple 
+                { 
+                    padding: unset;
+                    display: unset;
+                }
             }
-        }
-    </style>
-</head>
-<body>
-    <div class="resp respPad" style="background-color:#ff0;" >
-        aahsjhsjhasdh a j sd   hajksh
-        aahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajksh
-        aa  hs j hs j h  asdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajksh
-        aahsjhsjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajksh
-        aahsjh  sjhasdh a j sd   hajksh
-        aa  hs j hs j h  asdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajksh
-        aahsjhsj   hasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajksh
-        aahsjhsj   hasdh a j sd   hajksh
-        <br/>
-        <img src="about.jpg" style="width:50%;"/>
-    </div>
 
-    <div class="resp"  style="background-color:#ff0;" >
-        aahsjhsjhasdhajsdhajksh<br/>
-        <img src="about.jpg" style="width:20%;"/><img src="about.jpg" style="width:20%;"/>
-    </div>
+            @media ( max-width: 1250px )
+            {
+                div.respDouble 
+                { 
+                    width: 50%; 
+                    -webkit-flex:1; -ms-flex:1; flex:1;   
+                }
+                div.respQuadruple 
+                { 
+                    width: 50%;
+                }
+                div.respContainerQuadruple 
+                { 
+                    padding: unset;
+                    display: unset;
+                }
+            }
 
-    <div class="resp respContainerDouble" >
-        <div class="resp respDouble respPad" style="background-color:#f00;" >
-            <div style="position:relative;top:0%;">
-                aahsjhsjhasdh a j sd   hajksh
-                aahsjh  sjhasdh a j sd   hajksh
-                aa  hs j hs j h  asdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajksh
-                aahsjhsjhasdh a j sd   hajksh
-                aahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajksh
-                aa  hs j hs j h  asdh a j sd   hajksh
-                aahsjhsj   hasdh a j sd   hajksh
-                aahsjhsj   hasdh a j sd   hajksh<br/>
-                <img src="about.jpg" style="width:50%;" />
+            @media ( max-width: 768px )
+            {
+                div.respDouble 
+                { 
+                    width: 100%;
+                }
+                div.respTriple 
+                { 
+                    width: 100%;
+                }
+                div.respQuadruple 
+                { 
+                    width: 100%;
+                }
+                div.respPad
+                { 
+                    padding-left:0%; padding-right:0%;  
+                }
+
+                div.respContainerDouble,
+                div.respContainerTriple,
+                div.respContainerQuadruple
+                { 
+                    padding: unset;
+                    display: unset;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="resp respPad" style="background-color:#ff0;" >
+            aahsjhsjhasdh a j sd   hajksh
+            aahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajksh
+            aa  hs j hs j h  asdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajksh
+            aahsjhsjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajksh
+            aahsjh  sjhasdh a j sd   hajksh
+            aa  hs j hs j h  asdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajksh
+            aahsjhsj   hasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajksh
+            aahsjhsj   hasdh a j sd   hajksh
+            <br/>
+            <img src="about.jpg" style="width:50%;"/>
+        </div>
+
+        <div class="resp"  style="background-color:#ff0;" >
+            aahsjhsjhasdhajsdhajksh<br/>
+            <img src="about.jpg" style="width:20%;"/><img src="about.jpg" style="width:20%;"/>
+        </div>
+
+        <div class="resp respContainerDouble" >
+            <div class="resp respDouble respPad" style="background-color:#f00;" >
+                <div style="position:relative;top:0%;">
+                    aahsjhsjhasdh a j sd   hajksh
+                    aahsjh  sjhasdh a j sd   hajksh
+                    aa  hs j hs j h  asdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajksh
+                    aahsjhsjhasdh a j sd   hajksh
+                    aahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajksh
+                    aa  hs j hs j h  asdh a j sd   hajksh
+                    aahsjhsj   hasdh a j sd   hajksh
+                    aahsjhsj   hasdh a j sd   hajksh<br/>
+                    <img src="about.jpg" style="width:50%;" />
+                </div>
+            </div>
+            <div class="resp respDouble" style="background-color:#0f0;" >
+                <div style="position:relative;top:33%;">
+                    xxxaahsjhsj hasdhajs dhajksh<br/>
+                    <img src="about.jpg" style="width:20%;"/><img src="about.jpg" style="width:20%;"/>
+                </div>
             </div>
         </div>
-        <div class="resp respDouble" style="background-color:#0f0;" >
-            <div style="position:relative;top:33%;">
-                xxxaahsjhsj hasdhajs dhajksh<br/>
-                <img src="about.jpg" style="width:20%;"/><img src="about.jpg" style="width:20%;"/>
+
+        <div class="resp" style="background-color:#f80;" >
+            aahsjhsjhasdhajsdhajksh<br/>
+            <img src="about.jpg" style="width:50%;"/>
+        </div>
+
+        <div class="resp respContainerTriple" >
+            <div class="resp respTriple respPad" style="background-color:#00f;" >
+                <div style="position:relative;top:0%;">
+                    aahsjhsjhasdh a j sd   hajksh
+                    aahsjhsjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajksh
+                    <img src="about.jpg" style="width:20%;" />
+                    aahsjhsjhasdh a j sd   hajksh
+                </div>
+            </div>
+            <div class="resp respTriple respPad" style="background-color:#f0f;" >
+                <div style="position:relative;top:33%;">
+                    aahsjhsjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajksh
+                    <img src="about.jpg" style="width:20%;" />
+                </div>				
+            </div>
+            <div class="resp respTriple respPad" style="background-color:#ff0;" >
+                <div style="position:relative;top:33%;">
+                    aahsjhsjhasdh a j sd   hajksh
+                    <img src="about.jpg" style="width:20%;" />
+                </div>				
             </div>
         </div>
-    </div>
 
-    <div class="resp" style="background-color:#f80;" >
-        aahsjhsjhasdhajsdhajksh<br/>
-        <img src="about.jpg" style="width:50%;"/>
-    </div>
-
-    <div class="resp respContainerTriple" >
-        <div class="resp respTriple respPad" style="background-color:#00f;" >
-            <div style="position:relative;top:0%;">
-                aahsjhsjhasdh a j sd   hajksh
-                aahsjhsjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajksh
-                <img src="about.jpg" style="width:20%;" />
-                aahsjhsjhasdh a j sd   hajksh
+        <div class="resp respContainerQuadruple" >
+            <div class="resp respQuadruple respPad" style="background-color:#08f;min-height:200px;" >
+                <div style="position:relative;top:0px;">
+                    aahsjhsjhasdh a j sd   hajksh
+                    aahsjhsjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajksh
+                    <img src="about.jpg" style="width:20%;" /><br/>
+                    aahsjhsjhasdh a j sd   hajksh
+                </div>
+            </div>
+            <div class="resp respQuadruple respPad" style="background-color:#80f;min-height:200px;" >
+                <div style="position:relative;top:50px;border:1px solid #f00;">
+                    aahsjhsjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajksh
+                    <img src="about.jpg" style="width:20%;" />
+                </div>				
+            </div>
+            <div class="resp respQuadruple respPad" style="background-color:#808;min-height:200px;" >
+                <div style="position:relative;top:10px;">
+                    aahsjhsjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajksh
+                    <img src="about.jpg" style="width:20%;" />
+                </div>				
+            </div>
+            <div class="resp respQuadruple respPad" style="background-color:#8ff;min-height:200px;" >
+                <div style="position:relative;top:30px;">
+                    hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajksh
+                    <img src="about.jpg" style="width:20%;" />
+                </div>				
             </div>
         </div>
-        <div class="resp respTriple respPad" style="background-color:#f0f;" >
-            <div style="position:relative;top:33%;">
-                aahsjhsjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajksh
-                <img src="about.jpg" style="width:20%;" />
-            </div>				
-        </div>
-        <div class="resp respTriple respPad" style="background-color:#ff0;" >
-            <div style="position:relative;top:33%;">
-                aahsjhsjhasdh a j sd   hajksh
-                <img src="about.jpg" style="width:20%;" />
-            </div>				
-        </div>
-    </div>
-
-    <div class="resp respContainerQuadruple" >
-        <div class="resp respQuadruple respPad" style="background-color:#08f;min-height:200px;" >
-            <div style="position:relative;top:0px;">
-                aahsjhsjhasdh a j sd   hajksh
-                aahsjhsjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajksh
-                <img src="about.jpg" style="width:20%;" /><br/>
-                aahsjhsjhasdh a j sd   hajksh
-            </div>
-        </div>
-        <div class="resp respQuadruple respPad" style="background-color:#80f;min-height:200px;" >
-            <div style="position:relative;top:50px;border:1px solid #f00;">
-                aahsjhsjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajksh
-                <img src="about.jpg" style="width:20%;" />
-            </div>				
-        </div>
-        <div class="resp respQuadruple respPad" style="background-color:#808;min-height:200px;" >
-            <div style="position:relative;top:10px;">
-                aahsjhsjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajksh
-                <img src="about.jpg" style="width:20%;" />
-            </div>				
-        </div>
-        <div class="resp respQuadruple respPad" style="background-color:#8ff;min-height:200px;" >
-            <div style="position:relative;top:30px;">
-                   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajkshaahsjh  sjhasdh a j sd   hajksh
-                <img src="about.jpg" style="width:20%;" />
-            </div>				
-        </div>
-    </div>
-</body>
+    </body>
 </html>
